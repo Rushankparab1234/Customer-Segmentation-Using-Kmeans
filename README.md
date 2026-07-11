@@ -1,0 +1,239 @@
+# Customer Segmentation Using K-Means Clustering
+
+## Project Overview
+
+Customer segmentation is a technique used by businesses to divide customers into groups based on similar characteristics and purchasing behavior. In this project, K-Means Clustering, an unsupervised machine learning algorithm, is used to identify customer segments based on their **Annual Income** and **Spending Score**.
+
+The insights obtained from these customer groups can help businesses create personalized marketing strategies, improve customer satisfaction, and increase sales.
+
+
+## Objectives
+
+* Perform Exploratory Data Analysis (EDA) to understand customer distribution.
+* Apply the K-Means Clustering algorithm to segment customers.
+* Determine the optimal number of clusters using the Elbow Method.
+* Visualize customer segments using scatter plots.
+* Interpret each customer segment and provide business recommendations.
+
+
+## Dataset
+
+**Dataset:** Mall Customers Dataset
+
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Jupyter Notebook / VS Code
+
+
+## Project Workflow
+
+1. Load and inspect the dataset.
+2. Perform data cleaning and preprocessing.
+3. Conduct Exploratory Data Analysis (EDA).
+4. Select relevant features:
+
+   * Annual Income (k$)
+   * Spending Score (1–100)
+5. Scale the selected features using StandardScaler.
+6. Use the Elbow Method to determine the optimal number of clusters.
+7. Train the K-Means clustering model.
+8. Assign cluster labels to each customer.
+9. Visualize customer segments.
+10. Interpret the clusters and derive business insights.
+
+
+## Exploratory Data Analysis
+
+The following analyses were performed:
+
+* Dataset information and summary statistics
+* Missing value analysis
+* Duplicate value check
+* Age distribution
+* Annual Income distribution
+* Spending Score distribution
+* Gender distribution
+* Correlation heatmap
+* Pairplot for feature relationships
+
+
+## Elbow Method
+
+The Elbow Method was used to determine the optimal number of clusters.
+
+The Within-Cluster Sum of Squares (WCSS) was calculated for different values of **K**, and the elbow point indicated that **5 clusters** provided a good balance between simplicity and clustering performance.
+
+
+## Customer Segmentation Results
+
+The K-Means algorithm identified five distinct customer segments.
+
+cluster         Average_Income         Average_Spending_Score        Customer_Segment
+
+   0                 55.30                      49.52                Regular Customers
+   
+   1                 86.51                      82.13                Premium Customers
+
+   2                 25.73                      79.36                High Spending Budget
+                                                                          Customer
+
+   3                 88.20                      17.11                Potential Customer
+
+   4                 26.30                      20.91                Bidget Customer
+        
+
+
+
+## Cluster Interpretation
+
+### Cluster 0 – Regular Customers
+
+**Average Income:** 55.30k
+
+**Average Spending Score:** 49.52
+
+**Characteristics**
+
+* Medium income
+* Average spending behavior
+* Stable customer base
+
+**Business Strategy**
+
+* Recommend products based on previous purchases.
+* Encourage repeat purchases through loyalty programs.
+* Increase engagement using seasonal promotions.
+
+
+
+### Cluster 1 – Premium Customers
+
+**Average Income:** 86.54k
+
+**Average Spending Score:** 82.13
+
+**Characteristics**
+
+* High income
+* High spending
+* Most valuable customer segment
+
+**Business Strategy**
+
+* Offer VIP memberships.
+* Provide premium customer support.
+* Introduce exclusive products.
+* Focus on customer retention.
+
+
+### Cluster 2 – High-Spending Budget Customers
+
+**Average Income:** 25.73k
+
+**Average Spending Score:** 79.36
+
+**Characteristics**
+
+* Lower income
+* High spending
+* Frequent shoppers despite lower purchasing power
+
+**Business Strategy**
+
+* Offer loyalty rewards.
+* Promote affordable products and bundle offers.
+* Provide cashback and limited-time discounts.
+
+
+### Cluster 3 – Potential Customers
+
+**Average Income:** 88.20k
+
+**Average Spending Score:** 17.11
+
+**Characteristics**
+
+* High income
+* Low spending
+* Significant growth opportunity
+
+**Business Strategy**
+
+* Send personalized product recommendations.
+* Offer exclusive discounts.
+* Launch targeted marketing campaigns.
+* Understand purchasing barriers through customer feedback.
+
+
+### Cluster 4 – Budget Customers
+
+**Average Income:** 26.30k
+
+**Average Spending Score:** 20.91
+
+**Characteristics**
+
+* Low income
+* Low spending
+* Price-sensitive customers
+
+**Business Strategy**
+
+* Focus on affordable products.
+* Promote discounts and value-based offers.
+* Optimize marketing costs for this segment.
+
+
+## Cluster Visualization
+
+The customer segments were visualized using a scatter plot with:
+
+* **X-axis:** Annual Income (k$)
+* **Y-axis:** Spending Score (1–100)
+* **Colors:** Cluster labels generated by K-Means
+
+This visualization clearly illustrates how customers are grouped based on similar spending behavior and income levels.
+
+
+## Key Insights
+
+* Premium Customers are the most profitable segment and should be retained through exclusive benefits.
+* Potential Customers have high purchasing power but low spending, making them ideal targets for personalized marketing campaigns.
+* High-Spending Budget Customers are highly engaged shoppers and respond well to loyalty programs and promotional offers.
+* Regular Customers represent a stable customer base that can be encouraged to spend more through cross-selling and personalized recommendations.
+* Budget Customers are price-sensitive and are more likely to respond to discounts and value-oriented products.
+
+
+## Future Improvements
+
+* Include additional features such as Age and Gender in clustering.
+* Compare K-Means with Hierarchical Clustering and DBSCAN.
+* Evaluate cluster quality using the Silhouette Score.
+* Build an interactive dashboard using Streamlit.
+* Deploy the project as a web application.
+
+
+## Conclusion
+
+This project demonstrates how K-Means Clustering can effectively segment customers based on their annual income and spending behavior. By identifying distinct customer groups, businesses can design targeted marketing campaigns, improve customer engagement, optimize resource allocation, and enhance overall profitability. The project showcases the complete machine learning workflow, from data exploration and preprocessing to clustering, visualization, and business interpretation.
+
+
+## Skills Demonstrated
+
+* Data Cleaning
+* Exploratory Data Analysis (EDA)
+* Data Visualization
+* Feature Selection
+* Feature Scaling
+* Unsupervised Machine Learning
+* K-Means Clustering
+* Elbow Method
+* Business Insight Generation
+* Python Data Science Libraries (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
