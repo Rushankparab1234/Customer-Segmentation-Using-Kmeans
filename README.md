@@ -16,6 +16,9 @@ The insights obtained from these customer groups can help businesses create pers
 * Interpret each customer segment and provide business recommendations.
 
 
+## Intern ID: CITS9105
+
+
 ## Dataset
 
 **Dataset:** Mall Customers Dataset
